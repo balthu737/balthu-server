@@ -1,0 +1,103 @@
+.empresa-page { max-width: 760px; }
+
+.notion-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  background: rgba(77,159,255,0.05);
+  border: 1px solid rgba(77,159,255,0.18);
+  border-radius: var(--r-md);
+  margin-bottom: 20px;
+}
+
+.notion-alert-icon { font-size: 18px; color: var(--blue); flex-shrink: 0; }
+
+.notion-alert-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+
+.notion-alert-sub {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.notion-alert-sub strong { color: var(--text); }
+
+.notion-alert-sub code {
+  color: var(--accent);
+  background: rgba(124,255,212,0.08);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.emp-kpi {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--accent);
+  margin-top: 4px;
+}
+
+.emp-unit { font-size: 14px; color: var(--text-dim); }
+
+.proyecto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.proyecto-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 16px 18px;
+  transition: all 0.18s;
+}
+
+.proyecto-card:hover { border-color: var(--border-h); background: var(--surface2); }
+
+.proyecto-card.urgente { border-left: 3px solid var(--accent2); }
+
+.proyecto-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.proyecto-nombre {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.urgente-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent2);
+  box-shadow: 0 0 6px var(--accent2);
+  animation: pulse 1.5s infinite;
+  flex-shrink: 0;
+}
+
+.proyecto-meta {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.proyecto-pct { color: var(--accent); }

@@ -1,0 +1,99 @@
+.server-page { max-width: 820px; }
+
+/* Terminal */
+.srv-terminal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  padding: 22px 26px;
+  margin-bottom: 28px;
+  position: relative;
+  border-radius: var(--r-md);
+}
+
+.srv-terminal-tag {
+  position: absolute;
+  top: -9px;
+  left: 16px;
+  background: var(--bg);
+  padding: 0 8px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--text-dim);
+}
+
+.t-line {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 2.2;
+}
+
+.t-prompt { color: var(--green); }
+.t-cmd    { color: var(--text-dim); min-width: 90px; }
+.t-val    { color: var(--text); }
+.t-val.warn { color: var(--amber); }
+
+/* Stats */
+.stat-card {
+  border-left: 2px solid var(--border-h);
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+/* Services */
+.srv-service {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+  margin-bottom: 0;
+}
+
+.srv-service:hover {
+  border-color: var(--border-h);
+  background: var(--surface2);
+  transform: translateX(3px);
+}
+
+.srv-name   { flex: 1; color: var(--text); }
+.srv-status { font-size: 10px; letter-spacing: 2px; }
+.srv-status.on  { color: var(--green); }
+.srv-status.off { color: var(--text-dim); }
+
+/* Cursor blink */
+.cursor {
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: var(--green);
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* Title dim variant */
+.title-dim {
+  color: var(--text-dim);
+  font-weight: 300;
+}

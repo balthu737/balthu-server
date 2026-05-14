@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Backgrounds */
+  --bg:        #0a0a0f;
+  --surface:   #12121a;
+  --surface2:  #1a1a26;
+  --surface3:  #222236;
+
+  /* Borders */
+  --border:    #2a2a3a;
+  --border-h:  #3a3a55;
+
+  /* Accents */
+  --accent:    #7cffd4;
+  --accent2:   #ff6b6b;
+  --accent3:   #ffd166;
+  --usdt:      #26a17b;
+  --blue:      #4d9fff;
+
+  /* Text */
+  --text:      #e8e8f0;
+  --text-dim:  #6b6b8a;
+  --text-muted:#3a3a55;
+
+  /* Typography */
+  --font-display: 'Rajdhani', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+  --font-body:    'Syne', sans-serif;
+
+  /* Radii */
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  14px;
+  --r-xl:  18px;
+
+  /* Glows (sutiles) */
+  --glow:    0 0 20px rgba(124,255,212,0.08);
+  --glow-sm: 0 0 8px rgba(124,255,212,0.15);
+}

@@ -1,0 +1,94 @@
+.finanzas-page { max-width: 820px; }
+
+.balance-big {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-top: 8px;
+}
+
+.balance-currency {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-dim);
+  margin-right: 4px;
+}
+
+/* Tabs */
+.fin-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
+}
+
+.fin-tab {
+  padding: 10px 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: -1px;
+}
+
+.fin-tab:hover   { color: var(--text); }
+.fin-tab.active  { color: var(--green); border-bottom-color: var(--green); }
+
+/* Stats */
+.fin-stat {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.fin-stat.red { color: var(--red); }
+
+/* Gasto row */
+.gasto-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.gasto-row:last-child { border-bottom: none; }
+
+.gasto-emoji { font-size: 20px; width: 28px; text-align: center; flex-shrink: 0; }
+
+.gasto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.gasto-desc {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.gasto-cat {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.gasto-monto {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--red);
+  font-weight: 500;
+  flex-shrink: 0;
+}
