@@ -235,3 +235,44 @@ body {
 @keyframes rise {
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+/* ══════════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════════ */
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+  .page-content {
+    padding: 28px 24px;
+    max-width: 100%;
+  }
+  .page-title { font-size: 36px; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Móvil (≤ 768px) ── */
+@media (max-width: 768px) {
+  .page-content {
+    margin-left: 0;
+    padding: 20px 16px;
+    padding-top: calc(var(--topbar-h) + 20px);
+    max-width: 100%;
+  }
+  .page-title { font-size: 28px; letter-spacing: -0.5px; }
+  .grid-2,
+  .grid-3,
+  .grid-4 { grid-template-columns: 1fr; }
+  .btn { width: 100%; justify-content: center; }
+  .card { padding: 14px 12px; }
+}
+
+/* ── Celular chico (≤ 480px) ── */
+@media (max-width: 480px) {
+  .page-title  { font-size: 24px; }
+  .page-label  { font-size: 10px; }
+  /* 16px evita zoom automático en iOS al enfocar inputs */
+  .form-input,
+  .form-select { padding: 14px; font-size: 16px; }
+  .btn { padding: 14px 20px; min-height: 48px; }
+}

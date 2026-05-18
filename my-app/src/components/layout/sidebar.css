@@ -10,9 +10,11 @@
   flex-direction: column;
   padding: 28px 0;
   z-index: 100;
+  /* transición para el drawer móvil */
+  transition: transform 0.28s cubic-bezier(.23,1,.32,1);
 }
 
-/* Logo */
+/* ── Logo ── */
 .sidebar-logo {
   display: flex;
   align-items: baseline;
@@ -38,7 +40,7 @@
   letter-spacing: 4px;
 }
 
-/* Nav */
+/* ── Nav ── */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
@@ -98,7 +100,7 @@
   box-shadow: 0 0 6px var(--green);
 }
 
-/* Footer */
+/* ── Footer ── */
 .sidebar-footer {
   display: flex;
   align-items: center;
@@ -108,4 +110,86 @@
   font-size: 10px;
   letter-spacing: 2px;
   color: var(--text-dim);
+}
+
+/* ══════════════════════════════════════════════════
+   RESPONSIVE — DRAWER MÓVIL
+══════════════════════════════════════════════════ */
+
+/* Topbar fijo arriba, solo visible en móvil */
+.sidebar-topbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--topbar-h);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  z-index: 200;
+}
+
+.topbar-logo {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green);
+  text-shadow: var(--glow-sm);
+}
+
+.sidebar-toggle {
+  display: none;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.sidebar-toggle:hover { border-color: var(--border-h); }
+
+/* Overlay oscuro detrás del drawer */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 150;
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 768px) {
+  /* Mostrar topbar y botón */
+  .sidebar-topbar  { display: flex; }
+  .sidebar-toggle  { display: flex; }
+
+  /* Sidebar oculto fuera de pantalla por defecto */
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 160;
+  }
+
+  /* Sidebar visible cuando tiene clase .open */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Overlay visible cuando tiene clase .open */
+  .sidebar-overlay.open {
+    display: block;
+  }
+}
+.sidebar-version {
+  font-size: 0.65rem;
+  opacity: 0.4;
+  margin-top: 2px;
 }

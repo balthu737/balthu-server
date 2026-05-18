@@ -11,10 +11,6 @@ from routes.rutinas import rutina_bp
 from routes.server import server_bp
 from routes.tareas import tarea_bp
 from models import Request
-# debug = os.getenv("FLASK_DEBUG", "false").lower() == "true"
-# if not debug:
-#     log = logging.getLogger('werkzeug')
-#     log.setLevel(logging.ERROR)
 
 sql = Request()
 
@@ -27,6 +23,7 @@ def app():
     app.register_blueprint(finanzas_bp)
     app.register_blueprint(habitos_bp)
     app.register_blueprint(rutina_bp)
+    app.register_blueprint(server_bp)
     app.register_blueprint(tarea_bp)
     with app.app_context():
         sql.crear_tablas()

@@ -121,3 +121,11 @@
 .task-delete:hover {
   background: rgba(255, 80, 80, 0.12);
 }
+
+@media (max-width: 768px) {
+  .task-add .btn {
+    width: auto;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}

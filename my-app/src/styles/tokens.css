@@ -17,6 +17,7 @@
   --accent3:   #ffd166;
   --usdt:      #26a17b;
   --blue:      #4d9fff;
+  --green:     #7cffd4;
 
   /* Text */
   --text:      #e8e8f0;
@@ -34,7 +35,10 @@
   --r-lg:  14px;
   --r-xl:  18px;
 
-  /* Glows (sutiles) */
+  /* Glows */
   --glow:    0 0 20px rgba(124,255,212,0.08);
   --glow-sm: 0 0 8px rgba(124,255,212,0.15);
+
+  /* Alto del topbar móvil */
+  --topbar-h: 56px;
 }
