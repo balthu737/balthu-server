@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Habitos.css'
+import './habitos.css'
 
 // Datos de ejemplo — después vienen de Flask/SQLite
 const DAYS = ['L', 'M', 'X', 'J', 'V', 'S', 'D']

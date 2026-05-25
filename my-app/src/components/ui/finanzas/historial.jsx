@@ -1,5 +1,5 @@
 import { useState } from "react"
-import '../../../pages/finanzas/Finanzas.css'
+import '../../../pages/finanzas/finanzas.css'
 
 export default function Historial({ fmt, gastos }){
     return(

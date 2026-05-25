@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './Tareas.css'
+import './tareas.css'
 import QuickAdd from '../../components/ui/tareas/quick_add'
 import Filtros from '../../components/ui/tareas/filtros'
 import Listas from '../../components/ui/tareas/lista'

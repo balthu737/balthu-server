@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Estudio.css'
+import './estudio.css'
 
 // Datos de ejemplo — después vienen de la Obsidian REST API via Flask
 const NOTAS_RECIENTES = [

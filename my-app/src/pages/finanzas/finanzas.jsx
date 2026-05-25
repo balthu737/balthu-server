@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './Finanzas.css'
+import './finanzas.css'
 import Header from '../../components/ui/finanzas/header'
 import Tabs from '../../components/ui/finanzas/tabs'
 import Resumen from '../../components/ui/finanzas/resumen'

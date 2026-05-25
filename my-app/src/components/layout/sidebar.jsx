@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { APP_VERSION } from '../../version'
-import './Sidebar.css'
+import './sidebar.css'
 
 const NAV = [
   { to: '/',         icon: '⌥', label: 'INICIO',   enabled: true  },

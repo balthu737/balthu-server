@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Empresa.css'
+import './empresa.css'
 
 // Datos de ejemplo — después vienen de la Notion API via Flask
 const PROYECTOS = [

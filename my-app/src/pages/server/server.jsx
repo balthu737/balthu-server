@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './Server.css'
+import './server.css'
 
 const FALLBACK = {
   stats: [

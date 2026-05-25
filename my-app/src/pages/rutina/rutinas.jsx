@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Rutinas.css'
+import './rutinas.css'
 
 // Datos de ejemplo — después vienen de Flask/SQLite
 const BLOQUES = [
