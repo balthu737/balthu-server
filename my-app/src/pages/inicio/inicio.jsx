@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './inicio.css'
 
+const api = import.meta.env.VITE_API_URL
+
 const getSaludo = () => {
   const hora = new Date().getHours()
   if (hora < 12) return 'Buenos días'
@@ -25,7 +27,7 @@ export default function Inicio() {
     setCargando(true)
     setError(null)
 
-    fetch('http://127.0.0.1:5000')
+    fetch(api)
       .then(res => {
         if (!res.ok) throw new Error('Error ' + res.status)
         return res.json()

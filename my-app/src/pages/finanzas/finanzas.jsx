@@ -6,7 +6,7 @@ import Resumen from '../../components/ui/finanzas/resumen'
 import Historial from '../../components/ui/finanzas/historial'
 import Agregar from '../../components/ui/finanzas/agregar'
 
-const api = 'http://127.0.0.1:5000'
+const api = import.meta.env.VITE_API_URL
 
 const fmt = n => Math.abs(Math.round(n)).toLocaleString('es-AR')
 

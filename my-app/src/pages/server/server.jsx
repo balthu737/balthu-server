@@ -22,7 +22,7 @@ const FALLBACK = {
   ],
 }
 
-const api = 'http://localhost:5000'
+const api = import.meta.env.VITE_API_URL
 
 export default function Server() {
   const [data,    setData]    = useState(FALLBACK)

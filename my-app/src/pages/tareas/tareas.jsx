@@ -4,7 +4,7 @@ import QuickAdd from '../../components/ui/tareas/quick_add'
 import Filtros from '../../components/ui/tareas/filtros'
 import Listas from '../../components/ui/tareas/lista'
 
-const api = 'http://localhost:5000'
+const api = import.meta.env.VITE_API_URL
 
 const PRIORIDAD_COLOR = {
   alta:  'var(--red)',

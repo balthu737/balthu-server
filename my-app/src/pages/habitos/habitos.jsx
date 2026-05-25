@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './habitos.css'
 
+const api = import.meta.env.VITE_API_URL
+
 // Datos de ejemplo — después vienen de Flask/SQLite
 const DAYS = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
 

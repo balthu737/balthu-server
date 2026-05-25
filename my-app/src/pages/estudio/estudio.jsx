@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './estudio.css'
 
+const api = import.meta.env.VITE_API_URL
+
 // Datos de ejemplo — después vienen de la Obsidian REST API via Flask
 const NOTAS_RECIENTES = [
   { path: 'Ingeniería/Álgebra Lineal/Vectores.md',     modified: 'hace 2h',  size: '3.2kb' },

@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './rutinas.css'
 
+const api = import.meta.env.VITE_API_URL
+
 // Datos de ejemplo — después vienen de Flask/SQLite
 const BLOQUES = [
   { id: 1, hora: '06:00', duracion: 60,  nombre: 'Entrenamiento',    tipo: 'deporte',  color: 'var(--blue)'  },

@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './empresa.css'
 
+const api = import.meta.env.VITE_API_URL
+
 // Datos de ejemplo — después vienen de la Notion API via Flask
 const PROYECTOS = [
   { id: 1, nombre: 'Landing v2',       estado: 'en curso',  progreso: 65, asignado: 'Balthu', urgente: true  },
