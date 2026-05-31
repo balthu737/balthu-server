@@ -16,7 +16,7 @@ sql = Request()
 
 def app():
     app = Flask(__name__)
-    CORS(app)
+    CORS(app, origins="*")
     app.register_blueprint(api)
     app.register_blueprint(empresa_bp)
     app.register_blueprint(estudio_bp)
