@@ -17,7 +17,7 @@ sql = Request()
 def app():
     app = Flask(__name__)
     CORS(app, origins="*")
-    app.register_blueprint(api)
+    app.register_blueprint(api, url_prefix="/api")
     app.register_blueprint(empresa_bp)
     app.register_blueprint(estudio_bp)
     app.register_blueprint(finanzas_bp)
@@ -30,4 +30,4 @@ def app():
     return app
 
 a = app()
-a.run(host="0.0.0.0", port=5000, debug=True)
+a.run(host="0.0.0.0", port=5000)
